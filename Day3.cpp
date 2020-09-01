@@ -83,7 +83,7 @@ int main()
 	inorder(root); 
 	cout<<endl;
 	string x;
-    x=serialize(root);
+        x=serialize(root);
 	cout<<"Encoding"<<endl;
 	cout<<x<<endl;
 	Node *root1 = deserialize(x);
