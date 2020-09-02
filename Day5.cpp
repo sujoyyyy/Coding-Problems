@@ -24,11 +24,9 @@ int cdr(int p[])
 int main()
 {
 	int a,b;
-	int *p;
 	cin>>a>>b;
-	p = cons(a,b);
-	int x= car(p);
-	int y= cdr(p);
+	int x= car(cons(a,b));
+	int y= cdr(cons(a,b));
 	cout<<"First--"<<x<<endl;
 	cout<<"Second--"<<y<<endl;
 	return 0;
