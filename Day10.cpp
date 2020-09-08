@@ -11,7 +11,7 @@ void f()
 }
 int scheduler(void f(void), int n)
 {
-    sleep(n); //wait for n seconds
+    sleep(n/1000); //wait for n milliseconds
     f();
     return 0;// successful scheduling
 }
