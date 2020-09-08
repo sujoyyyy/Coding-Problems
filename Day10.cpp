@@ -3,6 +3,7 @@ This problem was asked by Apple.
 Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.*/
 #include<bits/stdc++.h>
 #include<chrono>
+#include<unistd.h>
 using namespace std;
 void f()
 {
@@ -10,7 +11,7 @@ void f()
 }
 int scheduler(void f(void), int n)
 {
-    for (auto start = std::chrono::steady_clock::now(), now = start; now < start + std::chrono::seconds{n}; now = std::chrono::steady_clock::now()); //wait loop for n seconds
+    sleep(n); //wait for n seconds
     f();
     return 0;// successful scheduling
 }
