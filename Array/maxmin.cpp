@@ -1,3 +1,4 @@
+//max and min in an array
 #include<bits/stdc++.h>
 using namespace std;
 #include<bits/stdc++.h>
